@@ -274,3 +274,7 @@ nav div ul li a:hover {
 .col-padding {
   padding: 0 15px;
 }
+
+.alert-mensaje {
+  transition:600ms ease-in-out;
+}

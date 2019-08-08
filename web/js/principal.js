@@ -14,24 +14,58 @@ $(document).ready(function() {
 
   var dataForm = $('#FormularioContacto').serialize();
 
-  $('#btnEnviar').click(function(){
+  $('#btnEnviar').click(function(e){
+    e.preventDefault();
+    
     validaForm();
+
+    
   });
 
   function validaForm(){
     // Campos de texto
-    if($('#Nombre').val() == ''){
-      $('.fa-user-tie.nombre').addClass('text-danger');
-      $('#Nombre').focus().addClass('form-control border border-danger'); /* Focus */
-      $('#MensajeNombre').show().html('El campo Nombre no puede estar vacío.');
+    if($('#Nombre').val() == '' || $('#Apellido').val() == '' 
+    || $('#EMail').val() == '' || $('#Telefono').val() == '' 
+    || $('#Mensaje').val() == ''){
+       $('#Alerta').removeClass('alert-secondary alert-succcess')
+                   .addClass('alert-danger alert-mensaje')
+                   .html('<b>ERROR</b>: hay campos vacíos, por favor verifique');
         return false;
     }
 
-     if($('#Apellido').val() == ''){
-      $('.fa-user-tie.apellido').addClass('text-danger');
-      $('#Apellido').focus().addClass('border border-danger'); /* Focus */
-      $('#MensajeApellido').show().html('El campo Apellido no puede estar vacío.');
-        return false;
+    else {
+      var Nombre = $("#Nombre").val();
+    var Apellido = $("#Apellido").val();
+    var Mensaje = $("#Mensaje").val();
+    var EMail = $("#EMail").val();
+    var Asunto = $("#Asunto").val();
+    var Telefono = $("#Telefono").val();
+    var Direccion = $("#Direccion").val();
+    var datos_form = {'Nombre':Nombre,
+                      'Apellido':Apellido,
+                      'EMail':EMail,
+                      'Telefono':Telefono,
+                      'Direccion':Direccion,
+                      'Asunto':Asunto,
+                      'Mensaje':Mensaje};
+
+     $.ajax({
+      url: 'enviaremail/send',
+      type:'POST',
+      data: datos_form,
+      success: function(data)
+      {
+        if(data){
+          console.log(data);
+          $('#Alerta').removeClass('alert-secondary alert-danger')
+                      .addClass('alert-success alert-mensaje')
+                      .html('Su mensaje ha sido enviado');
+      }
+      else{
+        console.log("error");
+      }
+      }               
+  });
     }
     return true; // Si todo está correcto
   }

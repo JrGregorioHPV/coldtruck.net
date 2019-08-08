@@ -43,7 +43,7 @@
         <div class="row">
     <div class="col-lg-6">
     <div class="form-group">
-    <label for="Nombre">Nombre</label>
+    <label for="Nombre">* Nombre</label>
     <div class="input-group mb-2">
         <div class="input-group-prepend">
           <div class="input-group-text"><i class="fas fa-user-tie nombre"></i></div>
@@ -53,7 +53,7 @@
       </div>
   </div></div>
     <div class="col-lg-6"><div class="form-group">
-    <label for="Apellido">Apellido</label>
+    <label for="Apellido">* Apellido</label>
     <div class="input-group mb-2">
         <div class="input-group-prepend">
           <div class="input-group-text"><i class="fas fa-user-tie apellido"></i></div>
@@ -66,23 +66,23 @@
 
         
   <div class="form-group">
-    <label for="EMail">Correo Electrónico</label>
+    <label for="EMail">* Correo Electrónico</label>
     <div class="input-group mb-2">
         <div class="input-group-prepend">
           <div class="input-group-text">@</div>
         </div>
-        <input type="email" class="form-control" id="EMail" aria-describedby="EMail" placeholder="Correo Electrónico">
+        <input type="email" class="form-control" id="EMail" aria-describedby="MensajeEMail" placeholder="Correo Electrónico">
       </div>
   </div>
   <div class="row">
     <div class="col-lg-6">
     <div class="form-group">
-    <label for="Telefono">Teléfono</label>
+    <label for="Telefono">* Teléfono</label>
     <div class="input-group mb-2">
         <div class="input-group-prepend">
           <div class="input-group-text"><i class="fas fa-phone-volume"></i></div>
         </div>
-        <input type="text" class="form-control" id="Telefono" aria-describedby="emailHelp" placeholder="">
+        <input type="text" class="form-control" id="Telefono" aria-describedby="MensajeTelefono" placeholder="">
       </div>
   </div>
     </div>
@@ -93,7 +93,7 @@
         <div class="input-group-prepend">
           <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
         </div>
-        <input type="text" class="form-control" id="inlineFormInputGroup" aria-describedby="emailHelp" placeholder="">
+        <input type="text" class="form-control" id="Direccion" aria-describedby="Direccion" placeholder="">
       </div>
   </div>
     </div>
@@ -113,17 +113,17 @@
       </div>
   </div>
   <div class="form-group">
-    <label for="Mensaje">Mensaje</label>
+    <label for="Mensaje">* Mensaje</label>
     <div class="input-group mb-2">
         <div class="input-group-prepend">
           <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
         </div>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="Mensaje" rows="3"></textarea>
       </div>
   </div>
   <div class="row p-3">
-  <div class="col-lg-12 alert alert-secondary text-center" role="alert">
-  A simple secondary alert—check it out!
+  <div id="Alerta" class="col-lg-12 alert alert-secondary text-center" role="alert">
+  * Los campos son requeridos
 </div>
   <div class="col-lg-6">
       <button type="submit" class="btn btn-danger col-lg-12">
