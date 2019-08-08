@@ -1,0 +1,276 @@
+/* Fuentes de Letra - Local */
+@font-face {
+    font-family: "Anton";
+    src: url("../fonts/google/Anton-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Concert One";
+    src: url("../fonts/google/ConcertOne-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Pathway Gothic One";
+    src: url("../fonts/google/PathwayGothicOne-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Kalam Light";
+    src: url("../fonts/google/Kalam-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "Days One";
+    src: url("../fonts/google/DaysOne-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Fira Sans";
+    src: url("../fonts/google/FiraSans-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Fira Sans Light";
+    src: url("../fonts/google/FiraSans-Light.ttf");
+  }
+
+@font-face {
+    font-family: "Caveat";
+    src: url("../fonts/google/Caveat-Regular.ttf");
+    src: local('Caveat'),
+        local('Caveat-Bold'),
+        url("../fonts/google/Caveat-Bold.ttf") format('woff2'),
+  }
+
+  @font-face {
+    font-family: "Chau Philomene One";
+    src: url("../fonts/google/ChauPhilomeneOne-Regular.ttf");
+    src: local('Chau Philomene One'),
+        local('ChauPhilomeneOne-RegularItalic'),
+        url("../fonts/google/ChauPhilomeneOne-RegularItalic.ttf") format('woff2'),
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+  }
+
+hr {
+  margin: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+    font-family: Fira Sans Light;
+    font-size: 1.3em;
+    text-indent: 2em;
+    text-align: justify;
+    margin-bottom: 1.8em;
+  }
+
+p.servicios {
+  text-indent: 0em;
+}
+
+header {
+  margin-top:60px;
+}
+
+section img.post {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+section img.post-right {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.iconos .container i {
+  font-size: 3.2em;
+}
+
+.caja  {
+  background-color: #eceff1;
+}
+
+.caja-border  {
+  background-color: #eceff1;
+  border-bottom: 3px solid green;
+}
+
+.lema {
+  font-family: Kalam Light;
+  font-size: 1.7em;
+}
+
+nav li.nav-item a.nav-link .active {
+  background:#0d47a1;
+  color: orange;
+}
+
+nav {
+  position: fixed;
+}
+
+.navbar-default {
+  transition:500ms ease;
+  background:#000143;
+  color: none;
+}
+
+.navbar-default.scrolled {
+  background-color: rgba(0, 6, 7, 0.5);
+  background: rgba(0, 6, 7, 0.5);
+}
+
+nav li.nav-item a {
+  color: #eceff1 ;
+}
+
+nav li.nav-item a:hover {
+  background:#0d47a1;
+  transition:400ms ease-in-out;
+  color: white;
+}
+
+li.nav-item .dropdown-menu a {
+  color: #212121;
+}
+
+li.nav-item .dropdown-menu a:hover {
+  color: #eceff1;
+}
+
+.color-text-nav-dropdown a {
+  color:#212121;
+}
+
+.color-text-nav-dropdown a:hover {
+  color: #eceff1 ;
+}
+
+/* Active */
+li.nav-item a.nav-link.active {
+  background:#0d47a1;
+  transition:800ms ease-in-out;
+  color: white;
+}
+
+/* Active Dropdown */
+li.nav-item.dropdown a.dropdown-item.active {
+  background:#0d47a1;
+  transition:800ms ease-in-out;
+  color: white;
+}
+
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
+
+footer {
+  border-top: 3px solid red;
+  color: silver;
+}
+
+footer h4 {
+  font-family: Pathway Gothic One;
+  font-size: 2em;
+}
+
+footer ul li a {
+  color: silver;
+}
+
+footer ul li a:hover {
+  color: orange;
+  text-decoration:none
+}
+
+footer .footer-top {
+  border-bottom: 1px solid black;
+}
+
+/* Redes Sociales */
+
+.fab {
+  width: 60px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.social {
+  position: fixed;
+  left: -40px;
+  top: 428px;
+}
+
+.social ul{
+  list-style: none;
+}
+
+.social a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  z-index: 0;
+  transition: 0.2s ease;
+}
+
+.fa-facebook-f {
+  background: #3b5998;
+}
+
+.fa-facebook-messenger {
+  background: #0084ff;
+}
+
+.fa-twitter {
+  background: #00abf0;
+}
+
+.fa-whatsapp {
+  background: #25d366;
+}
+
+.fa-instagram {
+  background: #3F729B;
+}
+
+.fa-google-plus-g {
+  background: #d95232;
+}
+
+.fa-envelopee {
+  background: #d95232;
+  font-size: 1.3em;
+}
+
+.social a:hover {
+  padding: 10px 45px;
+}
+
+nav div ul li a:hover {
+  color: orange;
+}
+
+.grid-divider {
+  position: relative;
+  padding: 0;
+}
+.grid-divider>[class*='col-'] {
+  position: static;
+}
+.grid-divider>[class*='col-']:nth-child(n+2):before {
+  content: "";
+  border-left: 1px solid #DDD;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.col-padding {
+  padding: 0 15px;
+}
